@@ -1,0 +1,16 @@
+﻿[DSHistory]
+Coordinates=0,0,72,36
+
+[DBGrid]
+Coordinates=10,78,57,36
+
+[ADOConnection1]
+Coordinates=179,1,114,36
+
+[qHistory2]
+Coordinates=10,10,69,58
+
+[]
+Coordinates=89,10,64,36
+Visible=True
+

@@ -1,0 +1,16 @@
+object Db: TDb
+  OldCreateOrder = False
+  OnCreate = DataModuleCreate
+  Height = 299
+  Width = 385
+  object ADOConnection: TADOConnection
+    ConnectionString = 
+      'Provider=MSDASQL.1;Password=12345;Persist Security Info=True;Use' +
+      'r ID=root;Extended Properties="DSN=D;UID=root;PWD=12345;DATABASE' +
+      '=flat_db;PORT=3306"'
+    LoginPrompt = False
+    Provider = 'MSDASQL.1'
+    Left = 201
+    Top = 128
+  end
+end

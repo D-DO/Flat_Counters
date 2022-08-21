@@ -1,0 +1,47 @@
+unit uDb;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, Data.DB, Data.Win.ADODB, FireDAC.Comp.Client, Umain,
+  FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Error, FireDAC.UI.Intf,
+  FireDAC.Phys.Intf, FireDAC.Stan.Def, FireDAC.Stan.Pool, FireDAC.Stan.Async,
+  FireDAC.Phys, FireDAC.VCLUI.Wait, FireDAC.Phys.MySQLDef, FireDAC.Phys.MySQL;
+
+type
+  TDb = class(TDataModule)
+    ADOConnection1: TADOConnection;
+    procedure DataModuleCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    function Connect: boolean;
+  end;
+
+var
+  DB: TDB;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+function TDB.Connect: boolean;
+//var
+//  oParams: TStrings;
+//  ErrorInfo: string;
+begin
+
+
+
+end;
+
+procedure TDb.DataModuleCreate(Sender: TObject);
+begin
+  Connect();
+end;
+
+end.
+

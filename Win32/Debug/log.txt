@@ -1,0 +1,1 @@
+22.07.2022 17:37:54.330 [ошиб] error=[MySQL][ODBC 8.0(w) Driver][mysqld-8.0.29]Cannot add or update a child row: a foreign key constraint fails (`flat_db`.`countersupdatehistory`, CONSTRAINT `fk_countersUpdateHistory_flats1` FOREIGN KEY (`flats_id`) REFERENCES `flats` (`id`))
